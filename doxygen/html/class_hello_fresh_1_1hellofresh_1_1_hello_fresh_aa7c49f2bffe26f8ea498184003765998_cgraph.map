@@ -1,0 +1,5 @@
+<map id="HelloFresh.hellofresh.HelloFresh.__str__" name="HelloFresh.hellofresh.HelloFresh.__str__">
+<area shape="rect" id="node1" title="This method is used to convert object to string Return 3 lines of string with Average cooking time wi..." alt="" coords="5,39,181,80"/>
+<area shape="rect" id="node2" href="$class_hello_fresh_1_1hellofresh_1_1_hello_fresh.html#a500f67fe3d2ffc0a5cfe864c331c918f" title="__convertToMin is used to convert Hour Minute string to minutes" alt="" coords="229,5,405,47"/>
+<area shape="rect" id="node3" href="$class_hello_fresh_1_1hellofresh_1_1_hello_fresh.html#a8e60a7e76306e55c561fe3a711029a1c" title="__convertToStr is used to convert minutes to Human Readable H M S string." alt="" coords="229,71,405,112"/>
+</map>

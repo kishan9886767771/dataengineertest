@@ -1,0 +1,94 @@
+\hypertarget{namespace_hello_fresh_1_1hellofresh}{}\doxysection{Hello\+Fresh.\+hellofresh Namespace Reference}
+\label{namespace_hello_fresh_1_1hellofresh}\index{HelloFresh.hellofresh@{HelloFresh.hellofresh}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_hello_fresh_1_1hellofresh_1_1_hello_fresh}{Hello\+Fresh}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hello_fresh_1_1hellofresh_1_1_hello_fresh}{Hello\+Fresh}} is a class to Read json and Calculate average cooking time duration per difficulty level using pyspark. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Constants}
+
+
+\doxysubsection{Constant Documentation}
+\mbox{\Hypertarget{namespace_hello_fresh_1_1hellofresh_aa5c4d22a4bdc1b3b3b6b3b150f75d345}\label{namespace_hello_fresh_1_1hellofresh_aa5c4d22a4bdc1b3b3b6b3b150f75d345}} 
+\index{HelloFresh.hellofresh@{HelloFresh.hellofresh}!filemode@{filemode}}
+\index{filemode@{filemode}!HelloFresh.hellofresh@{HelloFresh.hellofresh}}
+\doxysubsubsection{\texorpdfstring{filemode}{filemode}}
+{\footnotesize\ttfamily filemode}
+
+
+
+Definition at line 16 of file hellofresh.\+py.
+
+\mbox{\Hypertarget{namespace_hello_fresh_1_1hellofresh_a2ff994e16bf9521154de4cf659a3b689}\label{namespace_hello_fresh_1_1hellofresh_a2ff994e16bf9521154de4cf659a3b689}} 
+\index{HelloFresh.hellofresh@{HelloFresh.hellofresh}!filename@{filename}}
+\index{filename@{filename}!HelloFresh.hellofresh@{HelloFresh.hellofresh}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily filename}
+
+
+
+Definition at line 16 of file hellofresh.\+py.
+
+\mbox{\Hypertarget{namespace_hello_fresh_1_1hellofresh_a387137c43ed9616d39ba90e890d181eb}\label{namespace_hello_fresh_1_1hellofresh_a387137c43ed9616d39ba90e890d181eb}} 
+\index{HelloFresh.hellofresh@{HelloFresh.hellofresh}!format@{format}}
+\index{format@{format}!HelloFresh.hellofresh@{HelloFresh.hellofresh}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily format}
+
+
+
+Definition at line 16 of file hellofresh.\+py.
+
+\mbox{\Hypertarget{namespace_hello_fresh_1_1hellofresh_afde8e18a788ccc92fc61cab298bca7e3}\label{namespace_hello_fresh_1_1hellofresh_afde8e18a788ccc92fc61cab298bca7e3}} 
+\index{HelloFresh.hellofresh@{HelloFresh.hellofresh}!level@{level}}
+\index{level@{level}!HelloFresh.hellofresh@{HelloFresh.hellofresh}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily level}
+
+
+
+Definition at line 16 of file hellofresh.\+py.
+
+\mbox{\Hypertarget{namespace_hello_fresh_1_1hellofresh_aed68b744cf92725fd85bc9501022c4e0}\label{namespace_hello_fresh_1_1hellofresh_aed68b744cf92725fd85bc9501022c4e0}} 
+\index{HelloFresh.hellofresh@{HelloFresh.hellofresh}!sc@{sc}}
+\index{sc@{sc}!HelloFresh.hellofresh@{HelloFresh.hellofresh}}
+\doxysubsubsection{\texorpdfstring{sc}{sc}}
+{\footnotesize\ttfamily sc = Spark\+Context(master=\char`\"{}local\mbox{[}4\mbox{]}\char`\"{}, app\+Name=\char`\"{}Hello\+Fresh\char`\"{}).get\+Or\+Create()}
+
+
+
+Definition at line 23 of file hellofresh.\+py.
+
+\mbox{\Hypertarget{namespace_hello_fresh_1_1hellofresh_af8307932766773cb93c62be4f2f98151}\label{namespace_hello_fresh_1_1hellofresh_af8307932766773cb93c62be4f2f98151}} 
+\index{HelloFresh.hellofresh@{HelloFresh.hellofresh}!sqlContext@{sqlContext}}
+\index{sqlContext@{sqlContext}!HelloFresh.hellofresh@{HelloFresh.hellofresh}}
+\doxysubsubsection{\texorpdfstring{sqlContext}{sqlContext}}
+{\footnotesize\ttfamily sql\+Context = S\+Q\+L\+Context(\mbox{\hyperlink{namespace_hello_fresh_1_1hellofresh_aed68b744cf92725fd85bc9501022c4e0}{sc}})}
+
+
+
+Definition at line 24 of file hellofresh.\+py.
+
+\mbox{\Hypertarget{namespace_hello_fresh_1_1hellofresh_a9a3234502e11fe309ca756940b252b5b}\label{namespace_hello_fresh_1_1hellofresh_a9a3234502e11fe309ca756940b252b5b}} 
+\index{HelloFresh.hellofresh@{HelloFresh.hellofresh}!totalTime@{totalTime}}
+\index{totalTime@{totalTime}!HelloFresh.hellofresh@{HelloFresh.hellofresh}}
+\doxysubsubsection{\texorpdfstring{totalTime}{totalTime}}
+{\footnotesize\ttfamily dictionary total\+Time}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2     \textcolor{stringliteral}{"{}easy"{}} : \{ \textcolor{stringliteral}{"{}time"{}} : 0, \textcolor{stringliteral}{"{}count"{}}: 0 \},}
+\DoxyCodeLine{3     \textcolor{stringliteral}{"{}medium"{}} : \{ \textcolor{stringliteral}{"{}time"{}} : 0, \textcolor{stringliteral}{"{}count"{}}: 0 \},}
+\DoxyCodeLine{4     \textcolor{stringliteral}{"{}hard"{}} : \{ \textcolor{stringliteral}{"{}time"{}} : 0, \textcolor{stringliteral}{"{}count"{}}: 0 \}}
+\DoxyCodeLine{5 \}}
+
+\end{DoxyCode}
+
+
+P\+U\+B\+L\+IC V\+A\+R\+I\+A\+B\+LE D\+E\+C\+L\+A\+R\+A\+T\+I\+O\+NS. 
+
+
+
+Definition at line 28 of file hellofresh.\+py.
+

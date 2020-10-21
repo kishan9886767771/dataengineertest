@@ -1,0 +1,278 @@
+\hypertarget{class_hello_fresh_1_1hellofresh_1_1_hello_fresh}{}\doxysection{Hello\+Fresh Class Reference}
+\label{class_hello_fresh_1_1hellofresh_1_1_hello_fresh}\index{HelloFresh@{HelloFresh}}
+
+
+\mbox{\hyperlink{class_hello_fresh_1_1hellofresh_1_1_hello_fresh}{Hello\+Fresh}} is a class to Read json and Calculate average cooking time duration per difficulty level using pyspark.  
+
+
+\doxysubsection*{Public Member Functions}
+\doxysubsection*{Data Fields}
+\doxysubsection*{Private Member Functions}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_hello_fresh_1_1hellofresh_1_1_hello_fresh}{Hello\+Fresh}} is a class to Read json and Calculate average cooking time duration per difficulty level using pyspark. 
+
+More details. 
+
+Definition at line 37 of file hellofresh.\+py.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a9e2b7bb40213f8592a889c361c6cceaa}\label{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a9e2b7bb40213f8592a889c361c6cceaa}} 
+\index{HelloFresh@{HelloFresh}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!HelloFresh@{HelloFresh}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{url }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{class_hello_fresh_1_1hellofresh_1_1_hello_fresh}{Hello\+Fresh}} Objects This constructor also fetch data from given U\+RL and construct spark dataframe. 
+
+More details. 
+
+Definition at line 42 of file hellofresh.\+py.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a013a573eb8a82ae4b488c4f07822ff7a}\label{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a013a573eb8a82ae4b488c4f07822ff7a}} 
+\index{HelloFresh@{HelloFresh}!\_\_convertToMin@{\_\_convertToMin}}
+\index{\_\_convertToMin@{\_\_convertToMin}!HelloFresh@{HelloFresh}}
+\doxysubsubsection{\texorpdfstring{\_\_convertToMin()}{\_\_convertToMin()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+convert\+To\+Min (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\+\_\+\+\_\+convert\+To\+Min is used to convert Hour Minute string to minutes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+{\em time} & String Input (EX\+: 2H15M) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: integer value of minutes for given string (EX\+: 135) 
+\end{DoxyReturn}
+
+
+Definition at line 85 of file hellofresh.\+py.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_ad862f465ce4fb29fdb829dc8a60166ed}\label{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_ad862f465ce4fb29fdb829dc8a60166ed}} 
+\index{HelloFresh@{HelloFresh}!\_\_convertToStr@{\_\_convertToStr}}
+\index{\_\_convertToStr@{\_\_convertToStr}!HelloFresh@{HelloFresh}}
+\doxysubsubsection{\texorpdfstring{\_\_convertToStr()}{\_\_convertToStr()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+convert\+To\+Str (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{minutes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\+\_\+\+\_\+convert\+To\+Str is used to convert minutes to Human Readable H M S string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer ~\newline
+\\
+\hline
+{\em minutes} & Integer or Float value in minutes (EX\+: 13.\+5) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: human readable string (EX\+: 00H 13M 05S)
+\end{DoxyReturn}
+More details. 
+
+Definition at line 72 of file hellofresh.\+py.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_abd6bf84091b2caa65d14f53a432d0f4b}\label{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_abd6bf84091b2caa65d14f53a432d0f4b}} 
+\index{HelloFresh@{HelloFresh}!\_\_getTotalTime@{\_\_getTotalTime}}
+\index{\_\_getTotalTime@{\_\_getTotalTime}!HelloFresh@{HelloFresh}}
+\doxysubsubsection{\texorpdfstring{\_\_getTotalTime()}{\_\_getTotalTime()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+get\+Total\+Time (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\+\_\+\+\_\+get\+Total\+Time is used to get total of cook\+Time and prep\+Time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & json object with keys cook\+Time and prep\+Time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: integer value for sum of cook\+Time and prep\+Time 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file hellofresh.\+py.
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a878b53909680eaa84b0839d6c3420e44}\label{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a878b53909680eaa84b0839d6c3420e44}} 
+\index{HelloFresh@{HelloFresh}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!HelloFresh@{HelloFresh}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+This method is used to convert object to string Return 3 lines of string with Average cooking time with Difficulty. 
+
+More details. 
+
+Definition at line 63 of file hellofresh.\+py.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_af5bf08197ed70f3b33820e11b636817f}\label{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_af5bf08197ed70f3b33820e11b636817f}} 
+\index{HelloFresh@{HelloFresh}!config@{config}}
+\index{config@{config}!HelloFresh@{HelloFresh}}
+\doxysubsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily def config (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{easy,  }\item[{}]{hard }\end{DoxyParamCaption})}
+
+
+
+config is used to set the upperbound of easy difficulty and lowerbound of hard difficulty medium difficulty will be considered as between easy and hard 
+
+
+\begin{DoxyParams}{Parameters}
+{\em easy} & integer value as a higher bound for easy difficulty \\
+\hline
+{\em hard} & integer value as a lower bound for hard difficulty \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: True if configures successfully else False 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file hellofresh.\+py.
+
+\mbox{\Hypertarget{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_aa71c330ac7ba2aadc9d6bb4202621a0a}\label{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_aa71c330ac7ba2aadc9d6bb4202621a0a}} 
+\index{HelloFresh@{HelloFresh}!get@{get}}
+\index{get@{get}!HelloFresh@{HelloFresh}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily def get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{keyword }\end{DoxyParamCaption})}
+
+
+
+get Method is used to extract and compute Average time for all difficulty levels. 
+
+function takes one potential argument, which will be used as keyword while searching in ingredients then extract cook\+Time and prep\+Time using pyspark.
+
+Extracted values will be converted to minutes, compared with configured limits and compute average.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keyword} & string argument (will be used search items in json) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: False if keyword is None else True 
+\end{DoxyReturn}
+
+
+Definition at line 125 of file hellofresh.\+py.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a7e18c8c8899b771161fcd1f8292fbed8}\label{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a7e18c8c8899b771161fcd1f8292fbed8}} 
+\index{HelloFresh@{HelloFresh}!save@{save}}
+\index{save@{save}!HelloFresh@{HelloFresh}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily def save (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+save method is used to write extracted and computed data to given file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & string Absolute / Relative File\+Path with extention \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: False if failed to write file else True 
+\end{DoxyReturn}
+
+
+Definition at line 151 of file hellofresh.\+py.
+
+Here is the call graph for this function\+:
+% FIG 6
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_ab52c96bea30646abf8170f333bbd42b9}\label{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_ab52c96bea30646abf8170f333bbd42b9}} 
+\index{HelloFresh@{HelloFresh}!df@{df}}
+\index{df@{df}!HelloFresh@{HelloFresh}}
+\doxysubsubsection{\texorpdfstring{df}{df}}
+{\footnotesize\ttfamily df}
+
+
+
+Definition at line 52 of file hellofresh.\+py.
+
+\mbox{\Hypertarget{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a6407f58b7db46efdfbfddc4cb635b488}\label{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a6407f58b7db46efdfbfddc4cb635b488}} 
+\index{HelloFresh@{HelloFresh}!easyAvgTime@{easyAvgTime}}
+\index{easyAvgTime@{easyAvgTime}!HelloFresh@{HelloFresh}}
+\doxysubsubsection{\texorpdfstring{easyAvgTime}{easyAvgTime}}
+{\footnotesize\ttfamily easy\+Avg\+Time}
+
+
+
+Definition at line 53 of file hellofresh.\+py.
+
+\mbox{\Hypertarget{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a6ba03b0cdf1133717d1ade219cdb4c8a}\label{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a6ba03b0cdf1133717d1ade219cdb4c8a}} 
+\index{HelloFresh@{HelloFresh}!easyTime@{easyTime}}
+\index{easyTime@{easyTime}!HelloFresh@{HelloFresh}}
+\doxysubsubsection{\texorpdfstring{easyTime}{easyTime}}
+{\footnotesize\ttfamily easy\+Time}
+
+
+
+Definition at line 56 of file hellofresh.\+py.
+
+\mbox{\Hypertarget{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a3a76bff96d32fc69d5df351dc0a09a87}\label{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a3a76bff96d32fc69d5df351dc0a09a87}} 
+\index{HelloFresh@{HelloFresh}!hardAvgTime@{hardAvgTime}}
+\index{hardAvgTime@{hardAvgTime}!HelloFresh@{HelloFresh}}
+\doxysubsubsection{\texorpdfstring{hardAvgTime}{hardAvgTime}}
+{\footnotesize\ttfamily hard\+Avg\+Time}
+
+
+
+Definition at line 55 of file hellofresh.\+py.
+
+\mbox{\Hypertarget{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_abb4869339b9da86117f181c788407852}\label{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_abb4869339b9da86117f181c788407852}} 
+\index{HelloFresh@{HelloFresh}!hardTime@{hardTime}}
+\index{hardTime@{hardTime}!HelloFresh@{HelloFresh}}
+\doxysubsubsection{\texorpdfstring{hardTime}{hardTime}}
+{\footnotesize\ttfamily hard\+Time}
+
+
+
+Definition at line 57 of file hellofresh.\+py.
+
+\mbox{\Hypertarget{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a30d80d799fc4b83f64c02fcb352e1c61}\label{class_hello_fresh_1_1hellofresh_1_1_hello_fresh_a30d80d799fc4b83f64c02fcb352e1c61}} 
+\index{HelloFresh@{HelloFresh}!mediumAvgTime@{mediumAvgTime}}
+\index{mediumAvgTime@{mediumAvgTime}!HelloFresh@{HelloFresh}}
+\doxysubsubsection{\texorpdfstring{mediumAvgTime}{mediumAvgTime}}
+{\footnotesize\ttfamily medium\+Avg\+Time}
+
+
+
+Definition at line 54 of file hellofresh.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/personal/hello\+\_\+fresh/kishan/\+Hello\+Fresh/\mbox{\hyperlink{hellofresh_8py}{hellofresh.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="get" name="get">
+<area shape="rect" id="node1" title="get Method is used to extract and compute Average time for all difficulty levels." alt="" coords="5,5,45,32"/>
+<area shape="rect" id="node2" href="$class_hello_fresh_1_1hellofresh_1_1_hello_fresh.html#abd6bf84091b2caa65d14f53a432d0f4b" title="__getTotalTime is used to get total of cookTime and prepTime" alt="" coords="93,5,204,32"/>
+<area shape="rect" id="node3" href="$class_hello_fresh_1_1hellofresh_1_1_hello_fresh.html#a013a573eb8a82ae4b488c4f07822ff7a" title="__convertToMin is used to convert Hour Minute string to minutes" alt="" coords="252,5,364,32"/>
+</map>

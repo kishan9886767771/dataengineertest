@@ -1,0 +1,4 @@
+<map id="__getTotalTime" name="__getTotalTime">
+<area shape="rect" id="node1" title="__getTotalTime is used to get total of cookTime and prepTime" alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node2" href="$class_hello_fresh_1_1hellofresh_1_1_hello_fresh.html#a013a573eb8a82ae4b488c4f07822ff7a" title="__convertToMin is used to convert Hour Minute string to minutes" alt="" coords="164,5,276,32"/>
+</map>

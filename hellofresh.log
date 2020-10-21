@@ -1,0 +1,31 @@
+2020-09-30 01:21:01,664 Spark Context Created with Application Name : HelloFresh
+2020-09-30 01:21:01,672 Exception occurred Random Text as URL is not a valid URL
+Traceback (most recent call last):
+  File "D:\personal\hello_fresh\kishan9886767771-data-engineering-test\HelloFresh\hellofresh.py", line 44, in __init__
+    result = requests.get(url)
+  File "c:\users\admin\appdata\local\programs\python\python36\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "c:\users\admin\appdata\local\programs\python\python36\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "c:\users\admin\appdata\local\programs\python\python36\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "c:\users\admin\appdata\local\programs\python\python36\lib\site-packages\requests\sessions.py", line 459, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "c:\users\admin\appdata\local\programs\python\python36\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "c:\users\admin\appdata\local\programs\python\python36\lib\site-packages\requests\models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'Random Text as URL': No schema supplied. Perhaps you meant http://Random Text as URL?
+2020-09-30 01:21:02,145 S3 request is successful
+2020-09-30 01:21:02,146 Exception occurred https://www.google.com/ is not a json file
+NoneType: None
+2020-09-30 01:21:04,779 S3 request is successful
+2020-09-30 01:21:07,047 Control entered inside the config() method in HelloFresh class
+2020-09-30 01:21:07,047 Control entered inside the config() method in HelloFresh class
+2020-09-30 01:21:07,047 Control entered inside the config() method in HelloFresh class
+2020-09-30 01:21:07,047 Config values are less than 0
+2020-09-30 01:21:07,047 Control entered inside the get() method in HelloFresh class
+2020-09-30 01:21:07,047 get() method requires keyword in HelloFresh class
+2020-09-30 01:21:07,047 Control entered inside the get() method in HelloFresh class
+2020-09-30 01:21:10,881 Control entered inside the save() method in HelloFresh class
+2020-09-30 01:21:10,881 Control entered inside the save() method in HelloFresh class

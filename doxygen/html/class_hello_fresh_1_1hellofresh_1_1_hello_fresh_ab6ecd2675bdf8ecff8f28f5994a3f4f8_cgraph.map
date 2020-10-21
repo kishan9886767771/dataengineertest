@@ -1,0 +1,4 @@
+<map id="HelloFresh.hellofresh.HelloFresh.get" name="HelloFresh.hellofresh.HelloFresh.get">
+<area shape="rect" id="node1" title="get Method is used to extract and compute Average time for all difficulty levels." alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$class_hello_fresh_1_1hellofresh_1_1_hello_fresh.html#a06bdfacd5c64ec39b6663038b37d8f66" title="__getTotalTime is used to get total of cookTime and prepTime" alt="" coords="229,5,405,47"/>
+</map>
